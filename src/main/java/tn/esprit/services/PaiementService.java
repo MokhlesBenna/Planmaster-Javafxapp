@@ -30,7 +30,7 @@ public class PaiementService {
         Map<String, Object> chargeParams = new HashMap<>();
         chargeParams.put("amount", amountInCents);
         chargeParams.put("currency", currency);
-        chargeParams.put("source", token);  // The source is a Stripe token (or PaymentMethod, etc.)
+        chargeParams.put("source", token); 
         chargeParams.put("description", description);
 
         // Create the charge
