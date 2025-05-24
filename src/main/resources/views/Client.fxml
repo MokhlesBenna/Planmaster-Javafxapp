@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane prefHeight="400" prefWidth="600"
+            xmlns="http://javafx.com/javafx/21"
+            xmlns:fx="http://javafx.com/fxml/1"
+            fx:controller="tn.esprit.controllers.ClientController">
+
+    <VBox spacing="10" alignment="CENTER" layoutX="50" layoutY="50">
+        <Label text="Gestion des Clients" style="-fx-font-size: 20px; -fx-font-weight: bold;"/>
+
+        <TextField fx:id="nomField" promptText="Nom"/>
+        <TextField fx:id="prenomField" promptText="Prénom"/>
+        <TextField fx:id="adresseField" promptText="Adresse de Livraison"/>
+        <TextField fx:id="telephoneField" promptText="Téléphone"/>
+
+        <Button text="Ajouter" onAction="#addClient"/>
+        <Button text="Supprimer" onAction="#deleteClient"/>
+
+        <ListView fx:id="clientListView" prefHeight="150"/>
+    </VBox>
+</AnchorPane>
